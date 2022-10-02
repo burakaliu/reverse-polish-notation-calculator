@@ -18,9 +18,14 @@ public class Main {
     public static void main(String args[]) throws Exception{
         Stack stack = new Stack();
 
-        Scanner file = new Scanner(new File("src/file.txt"));
+        Scanner file = new Scanner(new File("polish.txt"));
 
         //hello is the commit thingy working test
-        
+
+        while (file.hasNext()){
+            stack.push(file.next());
+        }
+
+
     }
 }
